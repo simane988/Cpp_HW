@@ -6,7 +6,7 @@
 using namespace std;
 
 int lin_search(vector<int> vect, int search){
-    for (int i = 0; i <= 1000000000; i++){
+    for (int i = 0; i <= 100000000; i++){
         if (vect[i] == search){
             cout << endl << "LinSearch: " << search << " Find: " << vect[i] << endl;
             return 0;
@@ -18,7 +18,7 @@ int lin_search(vector<int> vect, int search){
 
 int bin_search(vector<int> vect, int search){
     int left = 0;
-    int right = 1000000000;
+    int right = 100000000;
     int middle;
     bool run = 1;
     while ((left<=right) && (run)){
@@ -40,10 +40,10 @@ int bin_search(vector<int> vect, int search){
 
 int main(){
     vector<int> vect;
-    for (int i = 0; i <= 1000000000; i++){
+    for (int i = 0; i <= 100000000; i++){
         vect.push_back(i);
     }
-    int search_int = rand()%1000000000;
+    int search_int = rand()%100000000;
 
     cout << "Search: " << search_int << endl;
 
